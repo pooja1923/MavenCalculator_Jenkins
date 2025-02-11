@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/pooja1923/MavenCalculator_Jenkins.git'
+                git branch: 'main', url: 'https://github.com/pooja1923/MavenCalculator_Jenkins.git'
             }
         }
         stage('Clean') {
